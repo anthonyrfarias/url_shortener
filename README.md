@@ -108,7 +108,7 @@ curl -d "url=https://www.google.com" -X POST http://bcurl.ddns.net/api/url/short
 ```
 
 ```bash
-GET: shorten_url #this method recieves param url and returns a short url as a json format.
+GET: list #this method recieves param url and returns a short url as a json format.
         Params: 
             url
 

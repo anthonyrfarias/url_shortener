@@ -16,7 +16,9 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "d
 
 var cors = require('cors');
 
-var dbUrl = "mongodb://localhost:27017/bluecoding-app";
+var user = encodeURIComponent('admin');
+var password = 'da39a3ee5';
+var dbUrl = "mongodb://${user}:${password}@localhost:27017/bluecoding-app";
 _mongoose["default"].Promise = global.Promise;
 
 _mongoose["default"].connect(dbUrl, {

@@ -101,6 +101,9 @@ export default{
 
 function updateTitle(id, url){
     request(url, function (error, response, body){
+        if(error){
+            return;
+        }
         var title = body.split('<title>')[1].split('</title>')[0];        
         models.urlModel.findByIdAndUpdate({_id: id}, {title: title}, function(err, res){
             

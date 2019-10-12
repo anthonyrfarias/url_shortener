@@ -18,7 +18,7 @@ var cors = require('cors');
 
 var user = encodeURIComponent('admin');
 var password = 'da39a3ee5';
-var dbUrl = "mongodb://${user}:${password}@159.65.69.242:27017/bluecoding-app";
+var dbUrl = "mongodb://${user}:${password}@localhost:27017/bluecoding-app";
 _mongoose["default"].Promise = global.Promise;
 
 _mongoose["default"].connect(dbUrl, {

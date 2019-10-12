@@ -7,7 +7,7 @@ import urlController from "./controllers/urlController"
 var cors = require('cors');
 const user = encodeURIComponent('admin');
 const password = 'da39a3ee5';
-const dbUrl = "mongodb://${user}:${password}@159.65.69.242:27017/bluecoding-app"
+const dbUrl = "mongodb://${user}:${password}@localhost:27017/bluecoding-app"
 mongoose.Promise = global.Promise;
 mongoose.connect(dbUrl,{useCreateIndex:true, useNewUrlParser: true})
     .then(mongoose => console.log(""))

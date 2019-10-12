@@ -114,3 +114,8 @@ GET: list #this method recieves param url and returns a short url as a json form
 
 EXAMPLE curl -X GET http://bcurl.ddns.net/api/url/list
 ```
+
+Finally, by visiting http://bcurl.ddns.net/<SHORT_URL_ID>
+it'll return a javascript object as response:
+
+{"code":1,"message":"You'll be redirected to: https://www.google.com","redirectTo":"https://www.google.com","tag":"REDIRECT_TO"}

@@ -65,7 +65,7 @@ export default{
         const short_url = req.params.short_url;
         const result = await models.urlModel.findOneAndUpdate({short_url: short_url}, {$inc: { seq: 1} });        
         if(!result){
-            res.status(404).json({
+            res.status(200).json({
                 code: 0, 
                 message: "You have provided an invalid short url",
                 tag: "INVALID_SHORT_URL"

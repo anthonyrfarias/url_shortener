@@ -98,7 +98,7 @@ http://bcurl.ddns.net/api/url/
 Methods:
 
 ```bash
-POST: shorten_url #this method recieves param url and returns a short url as a json format.
+POST: shorten #this method recieves param url and returns a short url as a json format.
         Params: 
             url
 
